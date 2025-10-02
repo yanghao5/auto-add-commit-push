@@ -2,6 +2,18 @@ name: Auto Add Commit Push
 description: Automatically commit changes made in your workflow run directly to your repo
 author: Yonomesh
 
+inputs:
+  name:
+    description: "Test Name !!!"
+    required: true
+    default: world
+  gh-token:
+    description: "The GitHub token for authentication."
+    required: true
+  label:
+    description: "The label to be applied to the pull request."
+    required: true
+
 runs:
   using: node24
   main: lib/index.js
