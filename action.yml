@@ -1,0 +1,11 @@
+name: Auto Add Commit Push
+description: Automatically commit changes made in your workflow run directly to your repo
+author: Yonomesh
+
+runs:
+  using: node24
+  main: lib/index.js
+
+branding:
+  icon: git-commit
+  color: gray-dark
