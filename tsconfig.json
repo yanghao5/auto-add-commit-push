@@ -2,7 +2,7 @@
   // Visit https://aka.ms/tsconfig to read more about this file
   "compilerOptions": {
     // File Layout
-    // "rootDir": "./src",
+    "rootDir": "./src",
     "outDir": "./lib",
 
     // Environment Settings
@@ -15,10 +15,15 @@
     // "types": ["node"],
     // and npm install -D @types/node
 
+    // 禁用增量编译
+    "composite":false,
+
     // Other Outputs
     "sourceMap": true,
-    "declaration": true,
-    "declarationMap": true,
+    // 不生成 .d.ts
+    "declaration": false,
+    // 不生成 .d.ts.map
+    "declarationMap": false,
 
     // Stricter Typechecking Options
     "noUncheckedIndexedAccess": true,

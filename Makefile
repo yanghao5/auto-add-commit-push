@@ -1,8 +1,6 @@
 .PHONY: clean push
 clean:
-	- rm -rf HostlistsRegistry
-	- rm -rf meta-rules-dat
-	- rm -rf anti-AD
+	- rm -rf dist lib
 
 push:
 	- git add --all
