@@ -1,7 +1,7 @@
 import core = require("@actions/core")
 import github = require("@actions/github")
 
-const name = core.getInput
+const name = core.getInput("name")
 
 console.log("Hello Young")
 console.log(`Hello ${name}`)
