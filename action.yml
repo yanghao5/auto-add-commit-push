@@ -16,7 +16,7 @@ inputs:
 
 runs:
   using: node24
-  main: lib/main.js
+  main: lib/index.js
 
 branding:
   icon: git-commit
